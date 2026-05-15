@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Navbar & Hero</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="loader"></div>
+    <nav class="navbar">
+      <div class="logo">KIDDO</div>
+
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="hamburger"></div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to KIDDO</h1>
+        <p>
+          Where softness meets style for your little one Our baby clothes are
+          made from gentle, breathable fabrics designed for comfort to adorable
+          outfits. From cozy onesies to adorable outfits, everything is crafted
+          with love to keep your baby snug, safe, and picture-perfect.
+        </p>
+        <button class="cta-btn">Shop Now</button>
+      </div>
+    </section>
+
+    <section class="featured">
+      <h2>Featured Clothing</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img
+            src="https://i.ibb.co/357S61QX/42b7955f-03da-477e-a734-ab17ac975ca7.avif/300x200"
+            alt="Product 1"
+          />
+          <h3>8-piece bodysuit</h3>
+          <p>R329.99</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://i.ibb.co/LX2LHTGj/6384ba904c3ba5f03e38fb6f0287acbb.avif"
+            alt="Product 2"
+          />
+          <h3>multi-design long sleeve vests</h3>
+          <p>R99.99</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="https://ibb.co/d4TzVjQ0" /><img
+            src="https://i.ibb.co/Jj1MGmzR/0be39e0f-7b14-4955-9181-1e3c06bc20ff.avif"
+            alt="Product 3"
+          />
+          <h3>Cute long-sleeve footed bodysuit</h3>
+          <p>R139.90</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://i.ibb.co/5x9ykB4B/18595554-bbbd-4e86-983f-637f217174f4.avif/300x200"
+            alt="Product 4"
+          />
+          <h3>Plain baby romper</h3>
+          <p>R69.99</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://i.ibb.co/SW2Tjc2/97bddee1-e793-49a2-9be9-2f62160e3b6c.avif"
+            alt="Product 5"
+          />
+          <h3>Baby wrap and beanie</h3>
+          <p>R119.99</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://i.ibb.co/27ZxXcTF/15848977-f62d-4645-a492-e9bd542068ea.avif"
+            alt="Product 6"
+          />
+          <h3>Beanie and socks combo</h3>
+          <p>R180.00</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://i.ibb.co/zWh6Ls86/b0411a3f-9735-45ce-915b-d3b19eb8a49f.avif"
+            alt="Product 7"
+          />
+          <h3>Fleece Blanket</h3>
+          <p>R150.00</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://i.ibb.co/NgH6yHvw/f6c085f1bdc3c8be8d2c7efb969bf16a.avif"
+            alt="Product 8"
+          />
+          <h3>Bath long towel</h3>
+          <p>R79.00</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+    <script>
+      window.addEventListener("load", function () {
+        setTimeout(function () {
+          document.getElementById("loader-container").style.display = "none";
+          document.getElementById("content").style.display = "block";
+        }, 3000); // 3 seconds
+      });
+    </script>
+  </body>
+</html>
